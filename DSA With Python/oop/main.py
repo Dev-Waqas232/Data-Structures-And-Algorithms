@@ -1,6 +1,7 @@
 class Item:
     # class attribute
     pay_rate = 0.8
+    all = []
 
     def __init__(self, name: str, price: int, quantity: int = 0):
         # Run Validations on the received arguements
@@ -12,6 +13,9 @@ class Item:
         self.price = price
         self.quantity = quantity
 
+        # Tracking the record of all the objects in a class
+        Item.all.append(self)
+
     def calculate_total_price(self):
         return self.price * self.quantity
 
@@ -20,8 +24,14 @@ class Item:
         # hm isko Item.pay_rate se bhi access kr skty hyn lekin agr ksi item ka pay_rate changr krna hoa to wo impossible hoga qk phir wo hr dfa class attribue ki value hi use krega  , lekin is trh se us object ka attribute use hoga jsko hm apne program me manually modify kr skty hyn
         self.price = self.price * self.pay_rate
 
+    def __repr__(self):
+        return f"Item('{self.name}',{self.price},{self.quantity})"
 
-item1 = Item("Phone", 1000, 15)
-item1.pay_rate = 0.7  # yha pr pay_rate ko modify kia he, agr upr function me self. ki bijae Item. use kia hota to yeh changings reflect na hotyn or wo 0.8 hi use krta as a value
-item1.discount_price()
-print(item1.price)
+
+item1 = Item("Phone", 100, 1)
+item2 = Item("Laptop", 1000, 3)
+item3 = Item("Cable", 10, 5)
+item4 = Item("Mouse", 50, 5)
+item5 = Item("Keyboard", 75, 5)
+
+print(Item.all)
