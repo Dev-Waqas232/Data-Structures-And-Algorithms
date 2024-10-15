@@ -12,9 +12,9 @@ class Item:
         assert quantity >= 0, f"Quantity {quantity} must be greater then 0"
 
         # Assigning arguments to self object
-        self.name = name
-        self.price = price
-        self.quantity = quantity
+        self.__name = name
+        self.__price = price
+        self.__quantity = quantity
 
         # Tracking the record of all the objects in a class
         Item.all.append(self)
