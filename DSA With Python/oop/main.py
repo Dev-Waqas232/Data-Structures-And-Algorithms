@@ -1,3 +1,6 @@
+import csv
+
+
 class Item:
     # class attribute
     pay_rate = 0.8
@@ -24,14 +27,22 @@ class Item:
         # hm isko Item.pay_rate se bhi access kr skty hyn lekin agr ksi item ka pay_rate changr krna hoa to wo impossible hoga qk phir wo hr dfa class attribue ki value hi use krega  , lekin is trh se us object ka attribute use hoga jsko hm apne program me manually modify kr skty hyn
         self.price = self.price * self.pay_rate
 
+    @classmethod
+    def instantiate_from_csv(cls):
+        with open("items.csv", "r") as f:
+            reader = csv.DictReader(f)
+            items = list(reader)
+
+        for item in items:
+            Item(
+                name=item.get("name"),
+                price=float(item.get("price")),
+                quantity=int(item.get("quantity"))
+            )
+
     def __repr__(self):
         return f"Item('{self.name}',{self.price},{self.quantity})"
 
 
-item1 = Item("Phone", 100, 1)
-item2 = Item("Laptop", 1000, 3)
-item3 = Item("Cable", 10, 5)
-item4 = Item("Mouse", 50, 5)
-item5 = Item("Keyboard", 75, 5)
-
+Item.instantiate_from_csv()
 print(Item.all)
