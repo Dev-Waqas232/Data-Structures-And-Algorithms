@@ -13,8 +13,8 @@ class Item:
 
         # Assigning arguments to self object
         self.__name = name
-        self.__price = price
-        self.__quantity = quantity
+        self.price = price
+        self.quantity = quantity
 
         # Tracking the record of all the objects in a class
         Item.all.append(self)
@@ -54,3 +54,26 @@ class Item:
 
 Item.instantiate_from_csv()
 print(Item.all)
+
+
+# Implementing Polymorphism
+
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+
+class Cow:
+    def speak(self):
+        return "Moo!"
+
+
+animals = [Dog(), Cat(), Cow()]
+
+for animal in animals:
+    print(animal.speak())
