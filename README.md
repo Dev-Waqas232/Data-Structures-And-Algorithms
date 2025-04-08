@@ -1,28 +1,26 @@
-# Python & DSA 🚀
+# Data Structures And Algorithms 🚀
 
-Welcome to my **Python & Data Structures & Algorithms (DSA)!** This repository serves as my personal learning log, where I'll document my progress, challenges, and solutions while mastering Python and improving my DSA skills.
+Welcome to my **Data Structures & Algorithms (DSA)!** This repository serves as my personal learning log, where I'll document my progress, challenges, and solutions while mastering DSA skills.
 
 ## 📌 Why This Repository?
 
 I created this repository to:
 
-- Track my progress in Python and DSA.
+- Track my progress in DSA.
 - Practice and refine my problem-solving skills.
 - Build a collection of useful code snippets and solutions.
 - Stay consistent and accountable in my learning journey.
 
 ## 🎯 Goals
 
-1. **Master Python** – Cover core concepts, advanced topics, and best practices.
-2. **Improve DSA Skills** – Solve problems systematically using patterns.
-3. **Prepare for Coding Interviews** – Practice company-specific and real-world problems.
-4. **Write Clean & Efficient Code** – Follow best practices and optimize solutions.
+1. **Master DSA Skills** – Solve problems systematically using patterns.
+2. **Prepare for Coding Interviews** – Practice company-specific and real-world problems.
+3. **Write Clean & Efficient Code** – Follow best practices and optimize solutions.
 
 ## 📂 Repository Structure
 
 ```
-📦 Python-and-DSA
-├── 📁 Advanced-Python     # OOP, decorators, generators, multithreading, etc.
+📦 Data-Structures-And-Algorithms
 ├── 📁 Data-Structures     # Implementation of various data structures
 ├── 📁 Algorithms          # Searching, sorting, and other algorithms
 ├── 📁 Problem-Solving     # Leetcode, Codeforces, and other problem solutions
@@ -44,4 +42,4 @@ This is my personal learning space, but if you have suggestions, feel free to op
 
 ## 🚀 Let's Go!
 
-Time to dive deep into Python and DSA! Stay consistent, solve problems, and have fun learning. 😃
+Time to dive deep into Data Structures and Algorithms! Stay consistent, solve problems, and have fun learning. 😃
