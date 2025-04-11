@@ -1,0 +1,1 @@
+/home/inspireuplift/Documents/Data\ structures\ and\ algorithms/problems/basics-of-programming/target/debug/basics-of-programming: /home/inspireuplift/Documents/Data\ structures\ and\ algorithms/problems/basics-of-programming/src/main.rs
