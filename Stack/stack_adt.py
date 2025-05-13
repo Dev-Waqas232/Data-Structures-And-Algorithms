@@ -21,6 +21,5 @@ class StackADT:
             raise Empty("Stack is empty")
         return self._data.pop()
             
-
 class Empty(Exception):
     pass
