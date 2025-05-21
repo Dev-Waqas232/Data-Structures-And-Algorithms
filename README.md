@@ -1,4 +1,4 @@
-# 🧠 DSA Mastery in C/C++
+# 🧠 Data Structures And Algorithms
 
 This repository contains my journey to master Data Structures and Algorithms (DSA) using **C and C++**. It includes well-organized code for core concepts, implementations, and problems from various online platforms.
 
